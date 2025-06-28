@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
@@ -38,15 +39,15 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between border-b border-corporate-blue py-3 lg:border-none">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-corporate-blue">
-                  Classic Engineering Corp
-                </span>
-                <span className="text-sm text-corporate-gray">
-                  Industrial Solutions & Engineering
-                </span>
-              </div>
+            <Link href="/" className="flex items-center space-x-4">
+              <Image
+                src="/logo.svg"
+                alt="Classic Engineering Corp Logo"
+                width={150}
+                height={45}
+                className="h-auto"
+                priority
+              />
             </Link>
           </div>
           <div className="ml-10 hidden space-x-8 lg:flex">
@@ -96,10 +97,14 @@ export default function Header() {
           <div className="fixed inset-0 z-50" />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
-                <span className="text-xl font-bold text-corporate-blue">
-                  Classic Engineering
-                </span>
+              <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
+                <Image
+                  src="/logo.svg"
+                  alt="Classic Engineering Corp Logo"
+                  width={120}
+                  height={36}
+                  className="h-auto"
+                />
               </Link>
               <button
                 type="button"

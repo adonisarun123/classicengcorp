@@ -40,6 +40,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -48,7 +51,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Classic Engineering Corp",
               "url": "http://www.classicengineeringcorp.com/",
-              "logo": "http://www.classicengineeringcorp.com/logo.png",
+              "logo": "http://www.classicengineeringcorp.com/logo.svg",
               "description": "Leading provider of industrial motors, gearboxes, pumps, and custom engineering solutions.",
               "address": {
                 "@type": "PostalAddress",
