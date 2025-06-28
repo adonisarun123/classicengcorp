@@ -150,7 +150,7 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="grid grid-cols-1 lg:grid-cols-3 gap-8"
         >
-          {values.map((value, valueIndex) => (
+          {values.map((value) => (
             <motion.div
               key={value.name}
               variants={itemVariants}
@@ -304,7 +304,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {certifications.map((certification, index) => (
+            {certifications.map((certification) => (
               <motion.div
                 key={certification.name}
                 variants={itemVariants}

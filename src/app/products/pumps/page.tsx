@@ -1,10 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { 
   ArrowRightIcon, 
-  CheckIcon,
-  ChevronRightIcon,
   WrenchIcon
 } from '@heroicons/react/24/outline'
 import { CheckCircleIcon } from '@heroicons/react/24/solid'

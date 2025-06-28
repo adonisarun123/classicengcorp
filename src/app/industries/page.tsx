@@ -1,6 +1,4 @@
 'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
@@ -148,7 +146,6 @@ const itemVariants = {
 }
 
 export default function IndustriesPage() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 relative overflow-hidden">
@@ -210,7 +207,7 @@ export default function IndustriesPage() {
           viewport={{ once: true }}
           className="grid grid-cols-2 gap-6 lg:grid-cols-4"
         >
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <motion.div
               key={stat.name}
               variants={itemVariants}
@@ -254,13 +251,11 @@ export default function IndustriesPage() {
           viewport={{ once: true }}
           className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
-          {industries.map((industry, index) => (
+          {industries.map((industry) => (
             <motion.div
               key={industry.name}
               variants={itemVariants}
               className="group relative"
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-white/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative backdrop-blur-sm bg-white/20 border border-white/30 rounded-3xl p-8 hover:bg-white/30 transition-all duration-500 transform hover:scale-105 h-full">

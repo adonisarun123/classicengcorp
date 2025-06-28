@@ -163,7 +163,7 @@ export default function ContactPage() {
           viewport={{ once: true }}
           className="grid grid-cols-1 gap-8 lg:grid-cols-3"
         >
-          {contactMethods.map((method, index) => (
+          {contactMethods.map((method) => (
             <motion.div
               key={method.name}
               variants={itemVariants}

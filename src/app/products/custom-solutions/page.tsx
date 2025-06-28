@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { BuildingOfficeIcon, LightBulbIcon, CheckCircleIcon, ArrowRightIcon, CheckIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
-import { motion } from 'framer-motion'
+import { BuildingOfficeIcon, LightBulbIcon, CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
   title: 'Custom Engineering Solutions - Classic Engineering Corp',
@@ -188,7 +187,7 @@ export default function CustomSolutionsPage() {
               href="/products"
               className="inline-flex items-center text-white/80 hover:text-white transition-colors"
             >
-              <ArrowLeftIcon className="h-5 w-5 mr-2" />
+              <ArrowRightIcon className="h-5 w-5 mr-2 rotate-180" />
               Back to Products
             </Link>
           </div>
