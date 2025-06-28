@@ -307,7 +307,7 @@ export default function IndustriesPage() {
           <div className="relative backdrop-blur-sm bg-gradient-to-r from-corporate-blue to-purple-600 rounded-3xl p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Industry-Specific Solutions</h2>
             <p className="text-xl mb-8 text-white/90">
-              Don't see your industry? We work with businesses across all sectors to deliver 
+              Don&apos;t see your industry? We work with businesses across all sectors to deliver 
               customized industrial solutions that meet your unique requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

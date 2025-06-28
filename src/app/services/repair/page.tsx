@@ -429,7 +429,7 @@ export default function RepairPage() {
           <div className="bg-corporate-blue rounded-lg p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-4">Need Equipment Repair Services?</h2>
             <p className="text-lg mb-6 text-white/90">
-              Don't let equipment failures slow down your operations. Contact our repair experts for fast, reliable service.
+              Don&apos;t let equipment failures slow down your operations. Contact our repair experts for fast, reliable service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -1,6 +1,14 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { WrenchIcon, CogIcon, CheckCircleIcon, ArrowLeftIcon } from '@heroicons/react/24/outline'
+import { motion } from 'framer-motion'
+import { 
+  ArrowRightIcon, 
+  CheckIcon,
+  ChevronRightIcon,
+  WrenchIcon
+} from '@heroicons/react/24/outline'
+import { CheckCircleIcon } from '@heroicons/react/24/solid'
+
 
 export const metadata: Metadata = {
   title: 'Industrial Pumps - Classic Engineering Corp',
@@ -136,12 +144,14 @@ export default function PumpsPage() {
               href="/products"
               className="inline-flex items-center text-white/80 hover:text-white transition-colors"
             >
-              <ArrowLeftIcon className="h-5 w-5 mr-2" />
+              <ArrowRightIcon className="h-5 w-5 mr-2 rotate-180" />
               Back to Products
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <WrenchIcon className="h-12 w-12 text-white" />
+            <div className="h-12 w-12 bg-white/20 rounded-lg flex items-center justify-center text-2xl">
+              🔧
+            </div>
             <div>
               <h1 className="text-4xl font-bold">Industrial Pumps</h1>
               <p className="text-xl text-white/90 mt-2">

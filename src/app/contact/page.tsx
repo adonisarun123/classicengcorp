@@ -1,16 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Metadata } from 'next'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
   ArrowRightIcon, 
-  PhoneIcon, 
-  EnvelopeIcon, 
-  MapPinIcon,
-  ClockIcon,
-  BuildingOfficeIcon
 } from '@heroicons/react/24/outline'
 import { 
   FaPhone, 
@@ -118,7 +112,7 @@ export default function ContactPage() {
                 Contact <span className="bg-gradient-to-r from-corporate-blue to-purple-600 bg-clip-text text-transparent">Us</span>
               </h1>
               <p className="text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
-                Get in touch with our team of experts. We're here to help you find the right 
+                Get in touch with our team of experts. We&apos;re here to help you find the right 
                 industrial solutions for your needs.
               </p>
             </div>
@@ -222,7 +216,7 @@ export default function ContactPage() {
                   </div>
                   <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">Send us a message</h2>
                   <p className="text-lg text-gray-600 mb-8">
-                    Fill out the form below and we'll get back to you within 24 hours.
+                    Fill out the form below and we&apos;ll get back to you within 24 hours.
                   </p>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

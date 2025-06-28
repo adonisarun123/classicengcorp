@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { BuildingOfficeIcon, CogIcon, LightBulbIcon, CheckCircleIcon, ArrowLeftIcon } from '@heroicons/react/24/outline'
+import { BuildingOfficeIcon, LightBulbIcon, CheckCircleIcon, ArrowRightIcon, CheckIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
+import { motion } from 'framer-motion'
 
 export const metadata: Metadata = {
   title: 'Custom Engineering Solutions - Classic Engineering Corp',
@@ -214,7 +215,7 @@ export default function CustomSolutionsPage() {
                   Engineering Excellence for Unique Challenges
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  When standard solutions don't meet your requirements, our custom engineering 
+                  When standard solutions don&apos;t meet your requirements, our custom engineering 
                   team steps in to design, develop, and deliver tailored solutions that address 
                   your specific industrial challenges. From concept to commissioning, we provide 
                   end-to-end engineering services.
@@ -223,6 +224,9 @@ export default function CustomSolutionsPage() {
                   Our experienced team of engineers combines innovative design with practical 
                   manufacturing expertise to create solutions that not only meet your technical 
                   requirements but also deliver exceptional value and performance.
+                </p>
+                <p className="text-gray-600 mb-6">
+                  Our engineering team doesn&apos;t just deliver products - we create partnerships that drive your success forward.
                 </p>
               </div>
               <div className="bg-gray-100 rounded-lg p-8">
@@ -326,8 +330,8 @@ export default function CustomSolutionsPage() {
           <div className="bg-corporate-blue rounded-lg p-8 text-white text-center">
             <LightBulbIcon className="h-16 w-16 text-white mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-4">Have a Unique Engineering Challenge?</h2>
-            <p className="text-lg mb-6 text-white/90">
-              Let's discuss how our custom engineering solutions can solve your specific requirements.
+            <p className="text-xl mb-8 text-white/90">
+              Don&apos;t settle for standard solutions when you can have equipment designed specifically for your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

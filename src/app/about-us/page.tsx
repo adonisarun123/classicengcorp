@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRightIcon, CheckCircleIcon, UserGroupIcon, CogIcon, TrophyIcon } from '@heroicons/react/24/outline'
+import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { 
   FaTrophy, 
   FaLightbulb, 
@@ -97,9 +97,8 @@ export default function AboutPage() {
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
                 About <span className="bg-gradient-to-r from-corporate-blue to-purple-600 bg-clip-text text-transparent">Classic Engineering</span> Corp
               </h1>
-              <p className="text-xl leading-relaxed text-gray-700 max-w-3xl mx-auto">
-                For over 25 years, we've been delivering innovative industrial engineering solutions 
-                that power manufacturing operations worldwide.
+              <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+                Learn about our journey, values, and commitment to excellence in industrial engineering since 1995.
               </p>
             </div>
           </motion.div>
@@ -151,7 +150,7 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="grid grid-cols-1 lg:grid-cols-3 gap-8"
         >
-          {values.map((value, index) => (
+          {values.map((value, valueIndex) => (
             <motion.div
               key={value.name}
               variants={itemVariants}
@@ -245,16 +244,16 @@ export default function AboutPage() {
           <div className="mx-auto max-w-4xl">
             <div className="flow-root">
               <ul className="-mb-8">
-                {milestones.map((milestone, milestoneIdx) => (
+                {milestones.map((milestone, milestoneIndex) => (
                   <motion.li
                     key={milestone.year}
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: milestoneIdx * 0.1 }}
+                    transition={{ duration: 0.6, delay: milestoneIndex * 0.1 }}
                   >
                     <div className="relative pb-8">
-                      {milestoneIdx !== milestones.length - 1 ? (
+                      {milestoneIndex !== milestones.length - 1 ? (
                         <span className="absolute left-6 top-6 -ml-px h-full w-0.5 bg-gradient-to-b from-corporate-blue to-purple-500" aria-hidden="true" />
                       ) : null}
                       <div className="relative flex items-start space-x-6">
@@ -342,8 +341,7 @@ export default function AboutPage() {
                 Partner with Industry Leaders
               </h2>
               <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-10">
-                Join thousands of satisfied customers who trust Classic Engineering Corp 
-                for their industrial equipment needs. Let's discuss how we can support your operations.
+                Let&apos;s discuss how our experience and expertise can benefit your next project.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 <Link

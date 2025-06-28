@@ -4,17 +4,9 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
   ArrowRightIcon, 
-  CogIcon, 
-  BoltIcon, 
-  WrenchIcon, 
-  BuildingOfficeIcon,
-  ShieldCheckIcon,
-  ClockIcon,
-  TrophyIcon,
-  ChartBarIcon,
   PlayIcon
 } from '@heroicons/react/24/outline'
-import { CheckCircleIcon, StarIcon } from '@heroicons/react/24/solid'
+import { CheckCircleIcon } from '@heroicons/react/24/solid'
 import { 
   FaCog, 
   FaBolt, 
@@ -176,7 +168,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat, _index) => (
               <motion.div
                 key={stat.name}
                 variants={itemVariants}
@@ -222,7 +214,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-8"
           >
-            {products.map((product, index) => (
+            {products.map((product, _index) => (
               <motion.div
                 key={product.name}
                 variants={itemVariants}
@@ -238,8 +230,8 @@ export default function Home() {
                       <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h3>
                       <p className="text-gray-600 mb-6">{product.description}</p>
                       <div className="space-y-3 mb-6">
-                        {product.features.map((feature, idx) => (
-                          <div key={idx} className="flex items-center">
+                        {product.features.map((feature, _index) => (
+                          <div key={feature} className="flex items-center">
                             <CheckCircleIcon className="h-5 w-5 text-green-500 mr-3" />
                             <span className="text-gray-700">{feature}</span>
                           </div>
@@ -286,7 +278,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
-            {services.map((service, index) => (
+            {services.map((service, _index) => (
               <motion.div
                 key={service.name}
                 variants={itemVariants}
