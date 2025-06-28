@@ -101,22 +101,22 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">Quick Links</h3>
+                <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li>
                     <Link
-                      href="/contact"
+                      href="/privacy"
                       className="text-sm leading-6 text-gray-300 hover:text-white transition-colors duration-200"
                     >
-                      Get Quote
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="/downloads"
+                      href="/terms"
                       className="text-sm leading-6 text-gray-300 hover:text-white transition-colors duration-200"
                     >
-                      Technical Documents
+                      Terms of Service
                     </Link>
                   </li>
                   <li>

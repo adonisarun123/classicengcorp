@@ -27,6 +27,8 @@ module.exports = {
     await config.transform(config, '/services/installation'),
     await config.transform(config, '/industries'),
     await config.transform(config, '/contact'),
+    await config.transform(config, '/privacy'),
+    await config.transform(config, '/terms'),
   ],
   transform: async (config, path) => {
     return {
